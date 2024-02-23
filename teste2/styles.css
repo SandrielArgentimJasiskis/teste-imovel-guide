@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#app {
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.user-container {
+    display: flex;
+	border: 3px solid #CCC;
+	padding:30px;
+	min-height: 340px;
+}
+
+.card-container {
+    flex: 1;
+	min-width: 200px;
+	min-height: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FF9900;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width:767px) {
+	img {
+		max-width: 100%;
+	}
+	.user-container {
+		flex-direction: column;
+	}
+}
+@media screen and (min-width:767px) {
+	img {
+		max-width: 200px;
+	}
+	.form-container form button{
+		position: absolute;
+		left: 32px;
+		bottom: 15px;
+	}
+	.card-container{
+		max-height: 260px;
+	}
+	.user-container  {
+		position:relative;
+	}
+	.color-buttons{
+		position: absolute;
+		top: calc(100% + 24px);
+	}
+}
+
+img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+}
